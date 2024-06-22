@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../images/steven-weeks-DUPFowqI6oI-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1; 
+}
+
+h1 {
+  position: relative; 
+  width: 100%; 
+  text-align: center; 
+  margin-right: 63%; 
+  margin-top: 5vh; 
+  font-family: "Geo", sans-serif;
+  color:  #B3A398;
+  font-family: 'Olive Village', sans-serif;
+}
+
+.logo {
+  position: absolute; 
+  left: 0; 
+  height: 90%; 
+  width: 11%; 
+}
+
+.scroll-button {
+  background-color: transparent;
+  color: #000000;
+  padding: 1em 2em; 
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 10%; 
+  justify-content: center;
+  align-items: center;
+  background-color: #cabba1;
+  border: transparent;
+  text-decoration: none;
+}
+
+.scroll-button:hover {
+  background-color:#876729; 
+}
+
+.opstmn p {
+  color: #fffffd; 
+  font-family:  Roundhand, cursive;
+  padding: 10px 0;
+  font-size: 4em; 
+  margin-top: 120px;
+  font-family: 'Playfair Display', serif;
+  color: #ece5d9;
+}
+
+.introcontainer p {
+  color: #ece5d9;
+  font-size: 1.7em; 
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2vh; 
+  width: 65%; 
+}
+
+.introcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10vh; 
+}
+
+.opstmn {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header {
+  position: relative; 
+  display: flex;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Olive Village';
+  src: url('../OliveVillage-Italic.otf') format('truetype');
+}
+
+.services {
+  display: none;
+  background-color: #cac5b3;
+}
+
+.services.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  width: 25%;
+  max-width: 500px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  background-color: rgba(201, 187, 161, 0.866);
+}
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-image {
+  max-width: 100%; 
+  height: 250px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.service-title {
+  padding: 1.5em;
+  background-color: transparent;
+  font-size: larger;
+  color:#42260d;
+  font-family: 'Playfair Display', serif;
+}
+
+.service-card:hover .service-title {
+  background-color: #BBAB8C; 
+}
+
+h2 {
+  font-size: 4vw; 
+  font-family: "American Typewriter", serif;
+  color: #151606bd;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5vw; 
+    margin-right: 0; 
+  }
+
+  h2 {
+    font-size: 5vw;
+  }
+
+  .introcontainer p {
+    width: 90%; 
+  }
+
+  .service-card {
+    width: 80%; 
+    max-width: 250px;
+    height: auto; 
+  }
+}
+
